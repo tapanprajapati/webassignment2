@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Edit Product</h2>
+
+<div mat-dialog-content>
+  <!-- Product:
+    <p>Name: {{data.name}} </p>
+    <p>Category: {{data.category}} </p>
+    <p>Quantity: {{data.quantity}} </p>
+  -->
+  <form>
+    <mat-form-field class="example-form-field">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" [value]="name" [(ngModel)]="name" name="name" />
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+      <mat-label>Category</mat-label>
+      <input matInput type="text" [value]="category" [(ngModel)]="category" name="category" />
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+      <mat-label>Quantity</mat-label>
+      <input matInput type="number" [value]="qty" [(ngModel)]="qty" name="qty" />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button [mat-dialog-close]>Close</button>
+  <button mat-raised-button color="primary" (click)="confirm()">Edit</button>
+</div>

@@ -1,0 +1,22 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.main {
+  height: 100vh;
+  // padding: 0 30px;
+  // background-color: lightsteelblue;
+}
+.example-icon {
+  padding-right: 14px;
+  color: white;
+  margin: 5px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

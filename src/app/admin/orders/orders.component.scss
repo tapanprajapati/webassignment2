@@ -1,0 +1,70 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.orders-main {
+  h2 {
+    text-align: center;
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+
+  .detail {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.mat-elevation-z8 {
+  height: fit-content;
+  max-height: initial;
+  overflow: auto;
+}
+
+.processing {
+  color: chocolate;
+}
+
+.processing-card {
+  margin: 0 40px;
+  background-color: chocolate;
+  color: white;
+}
+
+.completed {
+  color: green;
+}
+
+.completed-card {
+  background-color: green;
+  color: white;
+  margin: 0 40px;
+}
+.pending {
+  color: dodgerblue;
+}
+
+.pending-card {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.rejected {
+  color: crimson;
+}
+
+.rejected-card {
+  background-color: crimson;
+  color: white;
+}
+.total-card {
+  background-color: black;
+  color: white;
+}

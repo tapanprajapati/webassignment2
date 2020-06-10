@@ -1,0 +1,24 @@
+<div class="nav">
+  <div class="section" routerLink="/home">
+    <mat-card [class.selected]="active == 'home'" (click)="active = 'home'">
+      <h4>Home</h4>
+    </mat-card>
+  </div>
+  <div class="section" routerLink="/admin">
+    <mat-card [class.selected]="active == 'products'" (click)="active = 'products'">
+      <h4>Admin-Products</h4>
+    </mat-card>
+  </div>
+  <div class="section" routerLink="/admin/orders">
+    <mat-card [class.selected]="active == 'orders'" (click)="active = 'orders'">
+      <h4>Admin-Orders</h4>
+    </mat-card>
+  </div>
+  <div class="section">
+    <mat-card [class.selected]="active == 'profile'" (click)="active = 'profile'">
+      <h4>Profile Management</h4>
+    </mat-card>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

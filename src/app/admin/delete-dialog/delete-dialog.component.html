@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Confirm Delete</h2>
+
+<div mat-dialog-content>
+  Product:
+  <p>Name: {{ data.name }}</p>
+  <p>Category: {{ data.category }}</p>
+  <p>Quantity: {{ data.quantity }}</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button [mat-dialog-close]>Close</button>
+  <button mat-raised-button color="warn" (click)="confirm()">Delete</button>
+</div>

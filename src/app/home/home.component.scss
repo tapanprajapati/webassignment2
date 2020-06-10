@@ -1,0 +1,141 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.main {
+  height: 100vh;
+  // padding: 0 30px;
+  // background-color: lightsteelblue;
+}
+
+.content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-nav {
+  padding: 0 15px;
+  background-color: #eeeeee;
+  * {
+    width: inherit;
+  }
+
+  p:not(.nav-header) {
+    cursor: pointer;
+  }
+}
+
+.news {
+  height: 60vh;
+  padding: 0;
+  margin-top: 50px;
+  border: 1px solid darkslategrey;
+
+  .title {
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+
+  .nav-header {
+    color: deepskyblue;
+  }
+}
+
+mat-toolbar {
+  mat-toolbar-row {
+    padding-left: 0;
+  }
+  // .active{
+  //   color: black;
+  //   box-shadow: black;
+  // }
+  .link {
+    cursor: pointer;
+  }
+
+  .link:hover:not(.active) {
+    color: navajowhite;
+  }
+  span {
+    margin-right: 15px;
+  }
+
+  .logo {
+    display: table;
+    height: inherit;
+    margin: 10px;
+    align-items: center;
+    vertical-align: middle;
+    span {
+      background-color: white;
+      padding: 10px;
+      display: table-cell;
+      vertical-align: middle;
+      color: #2196f3;
+    }
+  }
+}
+
+.example-form-field {
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #eaf7ee;
+  overflow: hidden;
+
+  .header {
+    margin: 50px 0 50px 50px;
+    align-content: space-between;
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #f7ae7e;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-weight: bold;
+      margin: auto;
+    }
+  }
+
+  .search {
+    margin: 10px auto;
+    padding-top: 20px;
+  }
+
+  .image {
+    margin: 0;
+    padding: 20px;
+    background-image: url("src/assets/food-image.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.example-icon {
+  padding-right: 14px;
+  color: white;
+  margin: 5px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12vw, 12vw));
+  grid-gap: 20px;
+}
+
+.selected {
+  color: crimson;
+  font-weight: bold;
+}

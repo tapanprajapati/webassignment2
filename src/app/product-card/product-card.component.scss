@@ -1,0 +1,62 @@
+.example-card {
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .header {
+    padding: 8px;
+    background-color: #222222;
+    color: white;
+    margin: 0;
+  }
+
+  * {
+    margin-bottom: 5px;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .image {
+    height: inherit;
+    width: inherit;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.example-card:hover {
+  box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background: #9e9e9e;
+
+  p {
+    height: 100%;
+    margin: auto 0;
+  }
+
+  .action {
+    width: 50%;
+  }
+
+  .add-to-cart {
+    padding-left: 15px;
+    padding-top: 3px;
+    color: white;
+    cursor: pointer;
+  }
+}

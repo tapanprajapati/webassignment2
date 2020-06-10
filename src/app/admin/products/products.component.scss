@@ -1,0 +1,44 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.products-main {
+  h2 {
+    text-align: center;
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+
+  .detail {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+}
+
+.red {
+  color: crimson;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-elevation-z8 {
+  height: fit-content;
+  max-height: initial;
+  overflow: auto;
+}
+
+.orange {
+  color: chocolate;
+}
+
+.green {
+  color: green;
+}
+
+.delete-product-button {
+  cursor: pointer;
+}

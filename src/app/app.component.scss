@@ -1,0 +1,23 @@
+.nav {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+
+  .section {
+    margin: 5px;
+    width: 24vw;
+
+    mat-card {
+      width: inherit;
+    }
+
+    .selected {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    h4 {
+      text-align: center;
+    }
+  }
+}

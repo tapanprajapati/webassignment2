@@ -1,0 +1,68 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.main {
+  margin: 10px 0;
+  background: #2f2f2f;
+  display: flex;
+  flex-direction: row;
+
+  .map {
+    padding: 10px;
+    height: inherit;
+
+    iframe {
+      height: 100%;
+      width: inherit;
+    }
+  }
+
+  .links {
+    padding-left: 35px;
+
+    ul {
+      margin: 10px;
+      list-style: none;
+      padding: 0;
+
+      li {
+        color: dodgerblue;
+        cursor: pointer;
+        padding: 0 0 5px 0;
+        font-size: 90%;
+        width: fit-content;
+      }
+    }
+  }
+
+  .address {
+    p:not(.title) {
+      color: dodgerblue;
+      margin-left: 10px;
+      font-size: 90%;
+    }
+  }
+  .title {
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.fa {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.fa-facebook {
+  padding: 8px 12px;
+  background: white;
+}
+.fa-twitter {
+  padding: 8px 9px;
+  background: white;
+}
+.fa-instagram {
+  padding: 8px 9px;
+  background: #bb0000;
+  color: white;
+}
