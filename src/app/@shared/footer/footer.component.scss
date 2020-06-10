@@ -15,6 +15,11 @@
       width: inherit;
     }
   }
+  @media only screen and (max-width: 500px) {
+    .map {
+        display: none;
+    }
+  }
 
   .links {
     padding-left: 35px;
@@ -45,6 +50,11 @@
     margin: 10px;
     color: white;
     font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+      flex-direction: column;;
   }
 }
 

@@ -1,25 +1,50 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 .orders-main {
-  h2 {
+  padding-top: 20px;
+  p {
     text-align: center;
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 500px) {
+    p {
+        font-size: 24px;
+    }
   }
 }
 
 .summary {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
   margin: 20px 0;
 
   .detail {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .summary {
+      grid-template-columns: auto auto auto;
+
+      .detail{
+        font-size: 10px;
+        padding: 13px;
+      }
   }
 }
 
 table {
   width: 100%;
+  @media only screen and (max-width: 500px) {
+    td {
+        font-size: 10px;
+    }
+  }
 }
 
 .mat-elevation-z8 {
@@ -33,7 +58,6 @@ table {
 }
 
 .processing-card {
-  margin: 0 40px;
   background-color: chocolate;
   color: white;
 }
@@ -45,7 +69,6 @@ table {
 .completed-card {
   background-color: green;
   color: white;
-  margin: 0 40px;
 }
 .pending {
   color: dodgerblue;

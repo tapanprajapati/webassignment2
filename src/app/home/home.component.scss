@@ -94,16 +94,22 @@ mat-toolbar {
   overflow: hidden;
 
   .header {
-    margin: 50px 0 50px 50px;
+    margin-top: 30px;
     align-content: space-between;
-    h1 {
-      color: white;
-      text-shadow: 2px 2px 4px #f7ae7e;
+    p {
+      font-size: 46px;
+      color: #f7ae7e;
+      text-shadow: 2px 2px 4px grey;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-weight: bold;
       margin: auto;
     }
   }
+  @media only screen and (max-width: 500px) {
+    .header {
+        display: none;
+    }
+}
 
   .search {
     margin: 10px auto;
@@ -131,7 +137,7 @@ mat-toolbar {
 
 .item-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12vw, 12vw));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 180px));
   grid-gap: 20px;
 }
 
