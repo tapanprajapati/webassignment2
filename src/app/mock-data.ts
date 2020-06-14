@@ -1,4 +1,4 @@
-import { Product, Order } from './interfaces';
+import { Product, Order, User } from './interfaces';
 
 const PENDING = 'PENDING';
 const PROCESSING = 'PROCESSING';
@@ -150,3 +150,13 @@ export const ORDERS: Order[] = [
     status: PENDING,
   },
 ];
+
+export const USER: User = {
+  firstname: 'Tapan',
+  lastname: 'Prajapati',
+  bannerid: 'B00851820',
+  password: 'ABCD',
+  emailid: 'tp890953@dal.ca',
+  totalorders: 7,
+  birthdate: '24th May, 1998',
+};

@@ -4,7 +4,7 @@
       <p>Home</p>
     </mat-card>
   </div>
-  <div class="section  col-md-3 col-sm-6" routerLink="/admin">
+  <div class="section col-md-3 col-sm-6" routerLink="/admin">
     <mat-card [class.selected]="active == 'products'" (click)="active = 'products'">
       <p>Admin-Products</p>
     </mat-card>
@@ -14,9 +14,9 @@
       <p>Admin-Oders</p>
     </mat-card>
   </div>
-  <div class="section col-md-3 col-sm-6">
+  <div class="section col-md-3 col-sm-6" routerLink="/user/profile">
     <mat-card [class.selected]="active == 'profile'" (click)="active = 'profile'">
-      <p>Profil Management</p>
+      <p>User Profile</p>
     </mat-card>
   </div>
 </div>

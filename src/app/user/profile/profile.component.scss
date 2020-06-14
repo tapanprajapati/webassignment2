@@ -1,0 +1,88 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.main {
+  background-image: url("src/assets/profile_background.jpg");
+  background-size: contain;
+  .content {
+    background-color: white;
+    min-height: 70vh;
+    display: flex;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row;
+
+    .user-image {
+      border-radius: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      overflow: hidden;
+      padding: 0;
+      width: fit-content;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+
+    .user-data {
+      padding: 20px;
+      height: fit-content;
+      margin: auto;
+      .header {
+        text-align: center;
+        width: inherit;
+        p {
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+
+      .details {
+        margin: 10px auto;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .content {
+      flex-direction: column;
+
+      .user-image {
+        margin: 10px auto;
+        img {
+          width: 30vw;
+          justify-self: center;
+        }
+      }
+
+      .user-data {
+        .header {
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .details {
+          font-size: 14px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+
+  .nav-header {
+    color: deepskyblue;
+  }
+}
+.icon {
+  padding-right: 14px;
+  color: white;
+  margin: 5px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

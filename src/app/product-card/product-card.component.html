@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="card">
   <div class="header">
     <p class="title">{{ product.name }}</p>
     <p class="subtitle">{{ product.category }}</p>
@@ -7,11 +7,7 @@
     <img src="assets/food-image.png" alt="{{ product.name }}" />
   </div>
   <mat-card-content class="actions">
-    <mat-icon class="action add-to-cart" color="primary">add_shopping_cart</mat-icon>
+    <mat-icon class="action add-to-cart" color="primary" (click)="openSnackBar()">add_shopping_cart</mat-icon>
     <p class="action">Limit: {{ product.limit }}</p>
   </mat-card-content>
-  <!-- <mat-card-actions class="actions">
-      <button mat-button class="action">LIKE</button>
-      <button mat-button class="action">SHARE</button>
-    </mat-card-actions> -->
 </mat-card>

@@ -2,18 +2,14 @@
   <p>Orders Management</p>
   <div class="summary">
     <mat-card class="detail total-card" (click)="getOrdersByStatus('TOTAL')">Total: {{ total }}</mat-card>
-    <mat-card class="detail processing-card " (click)="getOrdersByStatus('PROCESSING')"
+    <mat-card class="detail processing-card" (click)="getOrdersByStatus('PROCESSING')"
       >Proccessing: {{ processing }}</mat-card
     >
-    <mat-card class="detail pending-card" (click)="getOrdersByStatus('PENDING')"
-      >Pending: {{ pending }}</mat-card
-    >
+    <mat-card class="detail pending-card" (click)="getOrdersByStatus('PENDING')">Pending: {{ pending }}</mat-card>
     <mat-card class="detail completed-card" (click)="getOrdersByStatus('COMPLETED')"
       >Completed: {{ completed }}</mat-card
     >
-    <mat-card class="detail rejected-card" (click)="getOrdersByStatus('REJECTED')"
-      >Rejected: {{ rejected }}</mat-card
-    >
+    <mat-card class="detail rejected-card" (click)="getOrdersByStatus('REJECTED')">Rejected: {{ rejected }}</mat-card>
   </div>
 
   <div class="container col-md-8 mat-elevation-z8">

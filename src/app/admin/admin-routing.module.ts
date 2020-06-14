@@ -5,7 +5,6 @@ import { extract } from '@app/i18n';
 
 import { AdminComponent } from './admin.component';
 import { AdminOrdersComponent } from './orders/orders.component';
-import { AdminWorkersComponent } from './workers/workers.component';
 import { AdminProductsComponent } from './products/products.component';
 
 const routes: Routes = [
@@ -26,8 +25,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'products', pathMatch: 'full' },
       { path: 'orders', component: AdminOrdersComponent, data: { title: extract('Orders Management') } },
-      { path: 'products', component: AdminProductsComponent, data: { title: extract('Products Management') } },
-      { path: 'workers', component: AdminWorkersComponent, data: { title: extract('Employee Manangement') } },
+      { path: 'products', component: AdminProductsComponent, data: { title: extract('Products Management') } }
     ],
   },
 ];

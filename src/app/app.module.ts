@@ -8,13 +8,13 @@ import { MaterialModule } from './material.module';
 
 import { CoreModule } from '@core';
 import { SharedModule } from '@shared';
-import { AuthModule } from '@app/auth';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DeleteDialogComponent } from './admin/delete-dialog/delete-dialog.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   imports: [
@@ -28,10 +28,9 @@ import { DeleteDialogComponent } from './admin/delete-dialog/delete-dialog.compo
     MaterialModule,
     CoreModule,
     SharedModule,
-    AuthModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
-  declarations: [AppComponent, HomeComponent, ProductCardComponent],
+  declarations: [AppComponent, HomeComponent, ProductCardComponent, ErrorComponent],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DeleteDialogComponent],

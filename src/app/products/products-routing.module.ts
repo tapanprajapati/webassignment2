@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthenticationGuard } from '@app/auth/authentication.guard';
 
 import { extract } from '@app/i18n';
 import { ProductsComponent } from './products.component';
@@ -11,8 +10,7 @@ const routes: Routes = [
   {
     path: ':id',
     component: ProductDetailsComponent,
-    data: { title: extract('Home') },
-    canActivate: [AuthenticationGuard],
+    data: { title: extract('Home') }
   },
 ];
 

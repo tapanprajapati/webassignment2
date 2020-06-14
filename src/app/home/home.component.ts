@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsServiceService } from '@app/products-service.service';
 import { Product } from '@app/interfaces';
-import { Observable } from 'rxjs';
-import { FormControl } from '@angular/forms';
-import { map, startWith } from 'rxjs/operators';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-home',

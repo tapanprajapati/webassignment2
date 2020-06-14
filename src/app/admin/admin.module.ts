@@ -8,7 +8,6 @@ import { AdminRoutingModule } from './admin-routing.module';
 
 import { AdminComponent } from './admin.component';
 import { AdminOrdersComponent } from './orders/orders.component';
-import { AdminWorkersComponent } from './workers/workers.component';
 import { AdminProductsComponent } from './products/products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
@@ -30,7 +29,6 @@ import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
     AdminComponent,
     AdminOrdersComponent,
     AdminProductsComponent,
-    AdminWorkersComponent,
     DeleteDialogComponent,
     EditDialogComponent,
   ],

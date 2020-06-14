@@ -17,7 +17,7 @@
   }
   @media only screen and (max-width: 500px) {
     .map {
-        display: none;
+      display: none;
     }
   }
 
@@ -54,7 +54,11 @@
 }
 @media only screen and (max-width: 500px) {
   .main {
-      flex-direction: column;;
+    flex-direction: column;
+
+    * {
+      font-size: 12px;
+    }
   }
 }
 
