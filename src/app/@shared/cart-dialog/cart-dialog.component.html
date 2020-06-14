@@ -1,0 +1,7 @@
+<div class="main">
+  <app-cart-item *ngFor="let item of cartService.getProducts()" class="cart-item" [cartItem]="item"></app-cart-item>
+  <h2 *ngIf="cartService.getProducts().length == 0">Add Products To Cart</h2>
+  <div *ngIf="cartService.getProducts().length != 0" class="checkout">
+    <button mat-raised-button color="primary">Checkout</button>
+  </div>
+</div>

@@ -38,11 +38,10 @@ export class HomeComponent implements OnInit {
       console.log(this.productsToShow);
       return;
     }
-    console.log(this.search);
     this.productsToShow = this.products.filter(
       (p) =>
         (this.selectedCats.length === 0 || this.selectedCats.indexOf(p.category) !== -1) &&
-        p.name.toLowerCase().indexOf(this.search) !== -1
+        p.name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1
     );
     console.log(this.productsToShow);
   }

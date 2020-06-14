@@ -23,3 +23,8 @@ export interface User {
   password: string;
   totalorders: number;
 }
+
+export interface CartItem {
+  product: Product;
+  quantity: number;
+}

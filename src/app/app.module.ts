@@ -15,6 +15,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DeleteDialogComponent } from './admin/delete-dialog/delete-dialog.component';
 import { ErrorComponent } from './error/error.component';
+import { CartItemComponent } from './@shared/cart-item/cart-item.component';
 
 @NgModule({
   imports: [

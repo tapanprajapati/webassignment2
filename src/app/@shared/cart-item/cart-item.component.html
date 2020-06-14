@@ -1,0 +1,14 @@
+<mat-card>
+  <div class="product-details">
+    <div class="product-title">
+      <p>{{ cartItem.product.name }}</p>
+    </div>
+    <div class="product-quantity">
+      <p>{{ cartItem.quantity }}</p>
+      <mat-icon (click)="increase()" class="green">add</mat-icon>
+      <mat-icon (click)="decrease()" color="warn">remove</mat-icon>
+      <button mat-raised-button color="warn" (click)="remove()">Remove</button>
+    </div>
+  </div>
+  <p class="error" *ngIf="cartItem.quantity == cartItem.product.limit">Item Limit Reached</p>
+</mat-card>

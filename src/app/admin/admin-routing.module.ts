@@ -25,7 +25,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'products', pathMatch: 'full' },
       { path: 'orders', component: AdminOrdersComponent, data: { title: extract('Orders Management') } },
-      { path: 'products', component: AdminProductsComponent, data: { title: extract('Products Management') } }
+      { path: 'products', component: AdminProductsComponent, data: { title: extract('Products Management') } },
     ],
   },
 ];

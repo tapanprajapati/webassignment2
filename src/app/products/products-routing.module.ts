@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: ':id',
     component: ProductDetailsComponent,
-    data: { title: extract('Home') }
+    data: { title: extract('Home') },
   },
 ];
 

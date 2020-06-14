@@ -9,8 +9,8 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    data: { title: extract('Home') }
-  }
+    data: { title: extract('Home') },
+  },
 ];
 
 @NgModule({
