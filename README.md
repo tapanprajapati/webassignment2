@@ -28,15 +28,15 @@ Purpose of this assignment was to create a high fidelity prototype of four web p
 
 > *Note: I have added links to these four pages in the top of the website. Only reason for doing that is to provide access to admin pages. **They are not part of website.***
 
-**1. Home Page**: This page contains list of products provided by Food Bank along with some details such as category and limit on the product. Searchbar is provided to search available product. User can filter the list according to category of the product from the list of categories on the left of the product list. Clicking on the cart icon in the product card will add the product in the cart.
+**[1. Home Page](https://dal-food-bank-b00851820.herokuapp.com/home)**: This page contains list of products provided by Food Bank along with some details such as category and limit on the product. Searchbar is provided to search available product. User can filter the list according to category of the product from the list of categories on the left of the product list. Clicking on the cart icon in the product card will add the product in the cart.
 
-**2. User Profile Page**: Users can see their information on this page. Apart from that, there is an option to change password is available on this. This page will display image of the user along with some personal information.
+**[2. User Profile Page](https://dal-food-bank-b00851820.herokuapp.com/user/profile)**: Users can see their information on this page. Apart from that, there is an option to change password is available on this. This page will display image of the user along with some personal information.
 
-**3. Admin - Product Management**: This page will be accessible by user with admin and volunteer authority. It will contain a table that shows all the available products. Admin( and volunteers) can manage inividual product from this page. Table used to show the products supports pagination and sorting of items.
+**[3. Admin - Products Management](https://dal-food-bank-b00851820.herokuapp.com/admin/products)**: This page will be accessible by user with admin and volunteer authority. It will contain a table that shows all the available products. Admin( and volunteers) can manage inividual product from this page. Table used to show the products supports pagination and sorting of items.
 
-**4. Admin - Order Management**: All the orders placed by users will be listed in this page. There are filters available to filter the order according to their status. Status can be *Proccessing*, *Pending*, *Rejected* or *Completed*. The table in this page also supports pagination and sorting.
+**[4. Admin - Order Management](https://dal-food-bank-b00851820.herokuapp.com/admin/orders)**: All the orders placed by users will be listed in this page. There are filters available to filter the order according to their status. Status can be *Proccessing*, *Pending*, *Rejected* or *Completed*. The table in this page also supports pagination and sorting.
 
-**5. 404 Page**: User will be redirected to this page when any invalid URL is entered.
+**[5. 404 Page](https://dal-food-bank-b00851820.herokuapp.com/error)**: User will be redirected to this page when any invalid URL is entered.
 
 ---
 
