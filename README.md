@@ -2,7 +2,7 @@
 # Assignment - 2
 
 [Source Code](https://github.com/Warrior24598/webassignment2)
-[App  Link](dal-food-bank-b00851820.herokuapp.com/)
+[App  Link](https://dal-food-bank-b00851820.herokuapp.com/)
 
 
 
