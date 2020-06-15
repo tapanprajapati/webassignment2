@@ -1,19 +1,47 @@
 
 # Assignment - 2
 
+[Source Code](https://github.com/Warrior24598/webassignment2)
+[App  Link](dal-food-bank-b00851820.herokuapp.com/)
+
+
+
 * Date Created: 04 JUN 2020
-* Last Modification Date: 13 JUN 2020
+* Last Modification Date: 14 JUN 2020
 
 ## Authors
 
 * [Tapan Prajapati - B00851820](Tapan.Prajapati@dal.ca)
 
+---
+
+
+## Overview
+
+### Project
+
+As a project of CSCI 5709 my team has decided to develop a web application for Dal Food Bank to make it easy for Food Bank volunteers and users to access service of Food Bank. Using this web application, Foob Bank members can make order of food products online. While placing order, user can choose date and time when to pick up the order in-person. From the Food Bank volunteers side, they can manage the products and their data. Moreover, they can see orders placed by users and can process the order.
+
+### Assignment 2
+
+Purpose of this assignment was to create a high fidelity prototype of four web pages for the web application. To satisfy the reqirements, I have created web pages listed below.
+
+> *Note: I have added links to these four pages in the top of the website. Only reason for doing that is to provide access to admin pages. **They are not part of website.***
+
+**1. Home Page**: This page contains list of products provided by Food Bank along with some details such as category and limit on the product. Searchbar is provided to search available product. User can filter the list according to category of the product from the list of categories on the left of the product list. Clicking on the cart icon in the product card will add the product in the cart.
+
+**2. User Profile Page**: Users can see their information on this page. Apart from that, there is an option to change password is available on this. This page will display image of the user along with some personal information.
+
+**3. Admin - Product Management**: This page will be accessible by user with admin and volunteer authority. It will contain a table that shows all the available products. Admin( and volunteers) can manage inividual product from this page. Table used to show the products supports pagination and sorting of items.
+
+**4. Admin - Order Management**: All the orders placed by users will be listed in this page. There are filters available to filter the order according to their status. Status can be *Proccessing*, *Pending*, *Rejected* or *Completed*. The table in this page also supports pagination and sorting.
+
+**5. 404 Page**: User will be redirected to this page when any invalid URL is entered.
+
+---
+
 
 ## Getting Started
-
-**[Optional]** If needing to provide the marker with a copy of the project that should run on their local machine for development, testing and/or marking purposes. Please include the following sections.
-
-See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -25,9 +53,8 @@ To have a local copy of  assignment up and running on your local machine, you wi
 4. Editor (Preferred  - [Visual Studio Code](https://code.visualstudio.com/download))
 
 
-See the following section for detailed step-by-step instructions on how to install this software / libraries / plug-ins
 
-### Installing
+### Installation
 
 It is assumed that you have installed all the tools required to run the application.
 
@@ -49,35 +76,16 @@ npm run build
 
 On successfully running the application, you will see page attached below in your browser.
 
-![Preview of Home](https://i.ibb.co/KhSJfkw/Screenshot-from-2020-06-12-20-44-21.png)
+![Preview of Home](https://i.ibb.co/1ZkYfYb/Screenshot-from-2020-06-14-22-52-13.png)
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 
 Development, build and quality processes are based on [angular-cli](https://github.com/angular/angular-cli) and [NPM scripts](https://docs.npmjs.com/misc/scripts), which includes:
 
-  
-
-- Optimized build and bundling process with [Webpack](https://webpack.github.io)
-
--  [Development server](https://webpack.github.io/docs/webpack-dev-server.html) with backend proxy and live reload
-
-- Cross-browser CSS with [autoprefixer](https://github.com/postcss/autoprefixer) and [browserslist](https://github.com/ai/browserslist)
-
-- Asset revisioning for [better cache management](https://webpack.github.io/docs/long-term-caching.html)
-
-- Unit tests using [Jasmine](http://jasmine.github.io) and [Karma](https://karma-runner.github.io)
-
-- End-to-end tests using [Protractor](https://github.com/angular/protractor)
 
 - Static code analysis: [TSLint](https://github.com/palantir/tslint), [Codelyzer](https://github.com/mgechev/codelyzer), [Stylelint](http://stylelint.io) and [HTMLHint](http://htmlhint.com/)
-
-- Local knowledgebase server using [Hads](https://github.com/sinedied/hads)
 
 - Automatic code formatting with [Prettier](https://prettier.io)
 
@@ -94,120 +102,14 @@ Development, build and quality processes are based on [angular-cli](https://gith
 -  [ngx-translate](https://github.com/ngx-translate/core)
 -  [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
+---
 ## Sources Used
-
-### header.component.html
-
-**Lines 1-25**
-
-```
-<nav  class="navbar navbar-expand-md bg-primary navbar-dark">
-	<a  class="navbar-brand">DSU Food Bank</a>
-	<button  class="navbar-toggler collapsed"  type="button"  data-toggle="collapse"  data-target="#collapsibleNavbar">
-		<span  class="navbar-toggler-icon"></span>
-	</button>
-	<div  class="collapse navbar-collapse"  id="collapsibleNavbar">
-		<ul  class="navbar-nav">
-			<li  class="nav-item">
-				<a  class="nav-link"  href="/home">Home</a>
-			</li>
-			<li  class="nav-item">
-				<a  class="nav-link"  href="/orders">Orders</a>
-			</li>
-		</ul>
-		<span  class="spacer"></span>
-		<div  class="nav-item navbar-nav">
-			<a href="/user/profile">
-				<mat-icon
-				class="icon"
-				aria-hidden="false"
-				aria-label="login icon">person</mat-icon>
-			</a>
-		</div>
-	</div>
-</nav>
-```
-The code above was created by adapting the code in [W3Schools](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp) as shown below: 
-
-```
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">  
-<!-- Brand -->  
-	<a class="navbar-brand" href="#">Navbar</a>  
-	  
-	<!-- Toggler/collapsibe Button -->  
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  
-		<span class="navbar-toggler-icon"></span>  
-	</button>  
-	<!-- Navbar links -->  
-	<div class="collapse navbar-collapse" id="collapsibleNavbar">  
-		<ul class="navbar-nav">  
-			<li class="nav-item">  
-				<a class="nav-link" href="#">Link</a>  
-			</li>  
-			<li class="nav-item">  
-				<a class="nav-link" href="#">Link</a>  
-			</li>  
-			<li class="nav-item">  
-				<a class="nav-link" href="#">Link</a>  
-			</li>  
-		</ul>  
-	</div>  
-</nav>
-```
-
-- The code in [W3Schools](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp) is used in the tutorial of Bootstrap 4 to demonstrate use of responsive navbar.
-- [W3Schools](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)'s Code is used to implement responsive navigation bar that modifies its behaviour according to screen size.
-- [W3Schools](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)'s Code is modified to redirect in the web application. Moreover, the original code behaves same for all screen size, but I have changed that to work different for different screen size.
-
-### delete-dialog.component.html
-
-**Lines 1-13**
-
-```
-<h2  mat-dialog-title>Confirm Delete</h2>
-
-<div  mat-dialog-content>
-	Product:
-	<p>Name: {{ data.name }}</p>
-	<p>Category: {{ data.category }}</p>
-	<p>Quantity: {{ data.quantity }}</p>
-</div>
-
-<div  mat-dialog-actions>
-	<button  mat-raised-button  [mat-dialog-close]>Close</button>
-	<button  mat-raised-button  color="warn"  (click)="confirm()">Delete</button>
-</div>
-```
-The code above was created by adapting the code in [Angular Material](https://material.angular.io/components/dialog/examples) as shown below: 
-
-```
-<h1 mat-dialog-title>Favorite Animal</h1>
-<div mat-dialog-content>
-	My favorite animal is:
-	<ul>
-		<li>
-			<span *ngIf="data.animal === 'panda'">&#10003;</span> Panda
-		</li>
-		<li>
-			<span *ngIf="data.animal === 'unicorn'">&#10003;</span> Unicorn
-		</li>
-		<li>
-			<span *ngIf="data.animal === 'lion'">&#10003;</span> Lion
-		</li>
-	</ul>
-</div>
-```
-
-- The code in [Angular Material](https://material.angular.io/components/dialog/examples) is used in the example of Dialog component.
-- [Angular Material](https://material.angular.io/components/dialog/examples)'s Code is used to display dialog to confirm the delete operation for a product in Admin Dashboard.
-- [Angular Material](https://material.angular.io/components/dialog/examples)'s Code is modified to display the details of product. Two buttons have been added to confirm the delete operation and to cancel delete operation.
-
 
 ### delete-dialog.component.ts
 
 **Lines 10-18**
 
-```
+```ts
 export class DeleteDialogComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<DeleteDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: Product) {}
 
@@ -220,7 +122,7 @@ export class DeleteDialogComponent implements OnInit {
 ```
 The code above was created by adapting the code in [Angular Material](https://material.angular.io/components/dialog/examples) as shown below: 
 
-```
+```ts
 export class DialogOverviewExampleDialog {
 
   constructor(
@@ -239,125 +141,11 @@ export class DialogOverviewExampleDialog {
 - [Angular Material](https://material.angular.io/components/dialog/examples)'s Code is modified to return a value when `Delete` button is pressed in dialog. When `Delete` button is pressed, the code will return `true` which will be checked by the calling function to delete the product. 
 
 
-
-### products.component.html
-
-**Lines 4-70**
-
-```
- <div class="container col-md-8 mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource" matSort>
-      <!-- Position Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
-        <td mat-cell *matCellDef="let product">
-          {{ product.name }}
-        </td>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="category">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th>
-        <td mat-cell *matCellDef="let product">
-          {{ product.category }}
-        </td>
-      </ng-container>
-
-      <!-- Weight Column -->
-      <ng-container matColumnDef="total">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Total</th>
-        <td mat-cell *matCellDef="let product">
-          {{ product.quantity }}
-        </td>
-      </ng-container>
-
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="limit">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Limit</th>
-        <td mat-cell *matCellDef="let product">
-          {{ product.limit }}
-        </td>
-      </ng-container>
-
-      <ng-container matColumnDef="on_order">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>On Order</th>
-        <td mat-cell *matCellDef="let product">{{ product.on_order }}</td>
-      </ng-container>
-
-      <ng-container matColumnDef="delete">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
-        <td mat-cell *matCellDef="let product">
-          <mat-icon
-            class="delete-product-button"
-            color="primary"
-            aria-hidden="false"
-            aria-label="delete icon"
-            (click)="edit(product)"
-            >create</mat-icon
-          >
-          <mat-icon
-            class="delete-product-button"
-            color="warn"
-            aria-hidden="false"
-            aria-label="delete icon"
-            (click)="delete(product)"
-            >delete</mat-icon
-          >
-        </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
-
-    <mat-paginator [pageSize]="[7]" showFirstLastButtons></mat-paginator>
-  </div>
-```
-The code above was created by adapting the code in [Angular Material](https://material.angular.io/components/table/examples) as shown below: 
-
-```
-<table mat-table [dataSource]="dataSource">
-
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
-      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-    </ng-container>
-
-    <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <th mat-header-cell *matHeaderCellDef> Weight </th>
-      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-    </ng-container>
-
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <th mat-header-cell *matHeaderCellDef> Symbol </th>
-      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-
-```
-
-- The code in [Angular Material](https://material.angular.io/components/table/examples) is used in the example of Table component.
-- [Angular Material](https://material.angular.io/components/table/examples)'s Code is used to explain use of table component with paginator.
-- [Angular Material](https://material.angular.io/components/dialog/examples)'s Code is modified to add an additional column to edit and delete a product with icon buttons. 
-
-
 ### prodcut-cart.component.ts
 
 **Lines 22-33**
 
-```
+```ts
 @Component({
   selector: 'snack-bar-component-example-snack',
   templateUrl: 'add-to-cart-snackbar.html',
@@ -373,7 +161,7 @@ export class SnackbarComponent {}
 ```
 The code above was created by adapting the code in [Angular Material](https://material.angular.io/components/snack-bar/examples) as shown below: 
 
-```
+```ts
 @Component({
   selector: 'snack-bar-component-example-snack',
   templateUrl: 'snack-bar-component-example-snack.html',
@@ -396,7 +184,7 @@ export class PizzaPartyComponent {}
 
 **Lines 90-98**
 
-```
+```ts
 const errors: ValidationErrors = {};
     if (control.value !== compareString) 
     {
@@ -410,7 +198,7 @@ const errors: ValidationErrors = {};
 ```
 The code above was created by adapting the code in [Stack Overflow](https://stackoverflow.com/questions/36756159/angular-2-custom-validator-with-parameters) as shown below: 
 
-```
+```ts
 const errors: ValidationErrors = {};
       let num = +control.value;
       if (isNaN(num) || num < min) {
@@ -425,10 +213,31 @@ const errors: ValidationErrors = {};
 - The code in [Stack Overflow](https://stackoverflow.com/questions/36756159/angular-2-custom-validator-with-parameters) is developed by [Boran Hanna](https://stackoverflow.com/users/10552859/brian-hanna) and is used to resolve error in creating custom validator for input field.
 - [Boran Hanna](https://stackoverflow.com/users/10552859/brian-hanna)'s Code is modified specify the type of validation and message to use when validation fails for the input field. 
 
+---
 
+## Design Justifications
 
-## Acknowledgments
+- **Navigation Bar**: Color of navigation bar is `#007BFF` ![#007BFF](https://via.placeholder.com/15/007BFF/000000?text=+). I have used this color because this is the color in most of the websites on the internet. Hence, users will feel it familiar while using the site.
+ - **Footer**: Background color footer is black to differentiate with navigation bar. Dark color helps getting attention and create focus of text in the footer.
+ - **Background of 404 Page**: I have used gradient similar to color of navigation bar. Gradient gives attractive look to the page and color of gradient matches with navigation to support common theme.
+ - **Background of Profile Page**: The profile page was looking simple with just profile image and table with user details. Adding this image improved the look of the page.
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+---
+
+## References
+
+- [Navigation Bar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)
+- [Material Icons](https://material.angular.io/components/icon/overview)
+- [Material Table](https://material.angular.io/components/table/overview)
+- [Material Card](https://material.angular.io/components/card/overview)
+- [Material Dialogbox](https://material.angular.io/components/dialog/overview)
+- [Material Snackbar](https://material.angular.io/components/snack-bar/overview)
+- [Google Map](https://goo.gl/maps/Jb5tu61uEUrq3gdt9)
+- [Social Media Icons](https://fontawesome.com/6?next=%2Ficons)
+
+### Images
+
+- [Product Image and Search Bar Image (Right Side)](https://www.themississaugafoodbank.org/)
+- [404 Image](https://pngio.com/images/png-a503902.html)
+- [Profile Page Background Image](https://wallpaperaccess.com/blue-orange)
+- [Profile Image](https://www.vecteezy.com/vector-art/379094-edit-profile-vector-icon)

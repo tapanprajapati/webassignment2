@@ -152,11 +152,11 @@ export const ORDERS: Order[] = [
 ];
 
 export const USER: User = {
-  firstname: 'Tapan',
-  lastname: 'Prajapati',
-  bannerid: 'B00851820',
+  firstname: 'John',
+  lastname: 'Snow',
+  bannerid: 'B00000001',
   password: 'ABCD',
-  emailid: 'tp890953@dal.ca',
+  emailid: 'john.snow@dal.ca',
   totalorders: 7,
-  birthdate: '24th May, 1998',
+  birthdate: '24th August, 1998',
 };
